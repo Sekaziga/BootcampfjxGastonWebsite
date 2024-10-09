@@ -298,3 +298,33 @@ footer {
 
 /* FontAwesome for Social Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-socials {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Flexbox Layout for Different Screen Sizes */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Grid for Desktop */
+@media (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+ 
