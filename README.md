@@ -14,9 +14,3 @@ I commit and push.
 Double-click the index.html file to open it in your default web browser.
 
 You should now see a webpage with different contents.
-
-
-
-
-
-
