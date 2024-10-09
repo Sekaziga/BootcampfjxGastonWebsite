@@ -1,0 +1,300 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(246, 206, 5, 0.8), rgba(18, 18, 18, 0.95));
+    z-index: 1000;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+#paragraphe1{
+    background-color: #999;
+    color: #121212;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #ffeb3b;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #e0a80d; /* Slight hover color change for logo */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0a80d;
+}
+
+/* Hover effect with animated underline */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e0a80d;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #ffeb3b;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #1c1c1c;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+/* Toggle hamburger menu animation */
+.hamburger.toggle span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Button */
+button.cta-btn {
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    border: none;
+    color: #121212;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-btn:hover {
+    background-color: #e0a80d;
+}
+
+
+
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    max-width: 1084px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+/* Footer Styling */
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a;
+    padding: 2rem 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo .logo {
+    font-size: 1.8rem;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-logo .logo:hover {
+    color: #e0a80d;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e0a80d;
+}
+
+/* Footer Social Icons */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-socials a {
+    color: #ffeb3b;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #e0a80d;
+}
+
+/* FontAwesome for Social Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
