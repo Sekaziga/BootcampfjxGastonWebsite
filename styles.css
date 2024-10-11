@@ -160,27 +160,6 @@ nav ul li a:hover::after {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
-/* Button */
-button.cta-btn {
-    padding: 10px 20px;
-    background-color: #ffeb3b;
-    border: none;
-    color: #121212;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button.cta-btn:hover {
-    background-color: #e0a80d;
-}
-
-
-
 /* Main Section Styling */
 main {
     display: grid;
